@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * custom_mul - multiplies second top element of custom_stack with top element of custom_stack
+ * custom_mul - multiplies second top element of custom_stack with top element
  * @custom_stack: pointer to pointer representing the custom_stack
  * @custom_line_number: line number
  * Return: nothing
