@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * custom_pchar -  prints the char at the top of the custom_stack, followed by \n
+ * custom_pchar -  prints the char at the top of the custom_stack
  * @custom_stack: pointer to pointer representing the custom_stack
  * @custom_line_number: line number
  * Return: nothing
