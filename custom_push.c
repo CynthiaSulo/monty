@@ -24,7 +24,7 @@ void custom_push(stack_t **custom_stack, unsigned int custom_line_number)
         {
                 free(custom_new_node);
                 dprintf(2, "L%u: usage: push integer\n", custom_line_number);
-                exit_status();
+		exit_status();
         }
         if (global.tokens[1][0] == '-')
         {

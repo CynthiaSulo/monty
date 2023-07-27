@@ -19,7 +19,6 @@ typedef struct monty_globals
 	char *tokens[100];
 	FILE *fptr;
 	char *line;
-	stack_t *stack;
 } monty_globals_t;
 
 extern monty_globals_t global;
@@ -38,17 +37,24 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * op_func - Function that selects the correct operation to perform.
- * @opcode: The operation code.
+ * struct instruction_s - opcode and its function
+ * @opcode: the opcode
+ * @f: function to handle the opcode
  *
- * Return: A pointer to the corresponding function.
+ * Description: opcode and its function
+ * for stack, queues, LIFO, FIFO
  */
+typedef struct instruction_s
+{
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
+} instruction_t;
 void (*op_func(char *opcode))(stack_t **stack, unsigned int line_number);
-
 void custom_swap(stack_t **custom_stack, unsigned int custom_line_number);
 void tokenize_line(char *input_line);
 void custom_pop(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_push(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_print_all(stack_t **custom_stack, unsigned int custom_line_number);
+void custom_pint(stack_t **custom_stack, unsigned int custom_line_number);
 void exit_status(void);
 #endif /* MONTY_H */

@@ -1,5 +1,12 @@
 #include "monty.h"
-
+void empty(void);
+monty_globals_t global = {{NULL}, NULL, NULL};
+/**
+ * main - entry point of the Monty Interpreter.
+ * @argc: number of command-line arguments
+ * @argv: array of command-line argument strings.
+ * Return: 0
+ */
 int main(int argc, char **argv)
 {
 	int num_chars = 0;
