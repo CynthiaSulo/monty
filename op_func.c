@@ -16,6 +16,7 @@ void (*op_func(char *opcode))(stack_t **stack, unsigned int line_number)
 		{"swap", custom_swap},
 		{"add", custom_add},
 		{"nop", custom_nop},
+		{"sub", custom_sub},
 		{NULL, NULL},
 	};
 	int i = 0;
