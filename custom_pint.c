@@ -10,10 +10,10 @@
  */
 void custom_pint(stack_t **custom_stack, unsigned int custom_line_number)
 {
-    if (*custom_stack == NULL)
-    {
-        dprintf(2, "L%u: can't pint, stack empty\n", custom_line_number);
-        exit(EXIT_FAILURE);
-    }
-    printf("%d\n", (*custom_stack)->n);
+	if (*custom_stack == NULL)
+	{
+		dprintf(2, "L%u: can't pint, stack empty\n", custom_line_number);
+		exit(EXIT_FAILURE);
+	}
+	printf("%d\n", (*custom_stack)->n);
 }
