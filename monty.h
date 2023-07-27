@@ -63,5 +63,6 @@ void custom_sub(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_div(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_mul(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_mod(stack_t **custom_stack, unsigned int custom_line_number);
-
+void custom_pchar(stack_t **custom_stack, unsigned int custom_line_number);
+void custom_pstr(stack_t **custom_stack, unsigned int custom_line_number);
 #endif /* MONTY_H */

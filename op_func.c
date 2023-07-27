@@ -20,6 +20,8 @@ void (*op_func(char *opcode))(stack_t **stack, unsigned int line_number)
 		{"div", custom_div},
 		{"mul", custom_mul},
 		{"mod", custom_mod},
+		{"pchar", custom_pchar},
+		{"pstr", custom_pstr},
 		{NULL, NULL},
 	};
 	int i = 0;
