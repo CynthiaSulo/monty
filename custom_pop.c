@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 /**
  * custom_pop - Removes the top element from the stack.
@@ -10,7 +11,7 @@
  */
 void custom_pop(stack_t **custom_stack, unsigned int custom_line_number)
 {
-	stack_t *custom_top;
+	stack_t *ptr;
 
 	if (*custom_stack == NULL)
 	{
@@ -18,7 +19,7 @@ void custom_pop(stack_t **custom_stack, unsigned int custom_line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	custom_top = *custom_stack;
+	ptr = *custom_stack;
 	*custom_stack = (*custom_stack)->next;
-	free(custom_top);
+	free(ptr);
 }

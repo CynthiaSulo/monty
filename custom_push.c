@@ -1,5 +1,6 @@
 #include "monty.h"
-
+#include <ctype.h>
+#include <stdio.h>
 /**
  * custom_push - Adds an element to the stack or queue.
  * @custom_stack: Pointer to pointer representing the stack.
