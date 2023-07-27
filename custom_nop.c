@@ -8,6 +8,6 @@
  */
 void custom_nop(stack_t **custom_stack, unsigned int custom_line_number)
 {
-    (void) *custom_stack;
-    (void) custom_line_number;
+	(void) *custom_stack;
+	(void) custom_line_number;
 }
