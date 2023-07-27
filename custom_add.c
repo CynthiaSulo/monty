@@ -17,5 +17,5 @@ void custom_add(stack_t **custom_stack, unsigned int custom_line_number)
 	}
 	custom_ptr2 = (*custom_stack)->next;
 	custom_ptr2->n = (*custom_stack)->n + custom_ptr2->n;
-	custom_pop(&(*custom_stack), custom_line_number);
+	custom_pop(custom_stack, custom_line_number);
 }

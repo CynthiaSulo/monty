@@ -57,4 +57,5 @@ void custom_push(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_print_all(stack_t **custom_stack, unsigned int custom_line_number);
 void custom_pint(stack_t **custom_stack, unsigned int custom_line_number);
 void exit_status(void);
+void custom_add(stack_t **custom_stack, unsigned int custom_line_number);
 #endif /* MONTY_H */
